@@ -22,7 +22,8 @@ class ChatConsumer(AsyncWebsocketConsumer):
             self.room_group_name,
             self.channel_name,
         )
-        # remove messages
+        # remove messages of the person who disconnected
+
 
     # Receive message from WebSocket
     async def receive(self, text_data):
